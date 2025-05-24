@@ -1,47 +1,57 @@
 ---
 title: 'GeoCrowdAI: A Modular Open-Source Platform for Real-Time Crowdsourced Geospatial Intelligence'
 tags:
-  - geospatial data
+  - Python
+  - real-time
+  - geospatial analysis
   - crowdsourcing
-  - AI
-  - real-time systems
-  - open-source software
+  - NLP
+  - open source
 authors:
   - name: Srijon Kumar Shill
-    affiliation: Independent Researcher
     orcid: 0009-0004-8924-2272
+    affiliation: Independent Researcher
+    email: theunpredictable157@gmail.com
 date: 2025-05-21
 ---
 
-## Summary
+# Summary
 
-GeoCrowdAI is a modular, open-source platform for real-time crowdsourced geospatial data collection and AI-enhanced analytics. It allows researchers, developers, and analysts to gather, analyze, and visualize location-based insights contributed by a global user base. Its modular architecture supports plug-and-play AI models, efficient data pipelines, and interactive visualizations for tasks such as disaster response, urban planning, and environmental monitoring.
+**GeoCrowdAI** is an open-source Python framework for real-time crowdsourced geospatial intelligence analysis. It captures live text streams such as tweets, analyzes their content using natural language processing (NLP), extracts relevant geographic information, and maps emerging hotspots or risk zones dynamically.
 
-## Statement of need
+This framework enables rapid situational awareness for use cases like disaster monitoring, urban planning, emergency response, and public safety. GeoCrowdAI emphasizes modularity, allowing easy integration of new data sources, models, and map layers.
 
-Existing solutions either focus on static crowdsourcing or proprietary data pipelines. GeoCrowdAI uniquely bridges the gap between real-time crowd inputs and intelligent spatial analysis using open technology. It supports rapid deployment for research applications and field-based interventions in dynamic environments.
+# Statement of Need
 
-## Repository
+Existing geospatial systems often depend on delayed structured data. GeoCrowdAI addresses the gap in **real-time public data analysis** by combining NLP with geocoding to extract and map spatial patterns from free-text sources such as social media or SMS streams. Researchers, NGOs, and emergency planners can use it to get live, actionable insights.
 
-https://github.com/example/GeoCrowdAI
+# Features
 
-## Installation
+- Real-time NLP-based keyword filtering
+- Location extraction and coordinate mapping
+- Modular plug-and-play architecture
+- CLI for live analysis and mapping
+- Compatible with Twitter, custom logs, or any text stream
+- Lightweight and customizable
+
+# Installation
 
 ```bash
-git clone https://github.com/example/GeoCrowdAI.git
-cd GeoCrowdAI
 pip install -r requirements.txt
-```
+python setup.py install
 
-## Example Use
+Example Use
 
-```python
-from geocrowdai import live_input, run_analysis
+from geocrowdai.stream import StreamProcessor
+stream = StreamProcessor()
+stream.listen()
 
-data = live_input(stream=True)
-results = run_analysis(data)
-```
+Acknowledgements
 
-## Acknowledgements
+The project uses spaCy, geopy, and folium.
 
-Thanks to the open-source community and geospatial developers.
+Software Availability
+
+GitHub: https://github.com/Srijon25/GeoCrowdAI
+
+DOI (Zenodo): 10.5281/zenodo.15499120
