@@ -1,13 +1,18 @@
 cff-version: 1.2.0
-message: "If you use GeoCrowdAI in your research, please cite it using the following metadata."
+message: "If you use this software, please cite it as below."
 title: "GeoCrowdAI: A Modular Open-Source Platform for Real-Time Crowdsourced Geospatial Intelligence"
+version: "1.0.0"
+doi: 10.5281/zenodo.15499120
+date-released: 2025-05-21
 authors:
   - family-names: Shill
     given-names: Srijon Kumar
-    orcid: 0009-0004-8924-2272
-    email: theunpredictable157@gmail.com
-date-released: 2025-05-21
-version: 0.1.0
-url: "https://github.com/example/GeoCrowdAI"
-doi: "10.21105/joss.XXXXX"  # replace with actual DOI after acceptance
-license: "MIT"
+    orcid: https://orcid.org/0009-0004-8924-2272
+    affiliation: Independent Researcher
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.15499120
+repository-code: https://github.com/Srijon25/GeoCrowdAI
+url: https://github.com/Srijon25/GeoCrowdAI
+license: MIT
+type: software
