@@ -3,7 +3,7 @@ message: "If you use this software, please cite it as below."
 title: "GeoCrowdAI: A Modular Open-Source Platform for Real-Time Crowdsourced Geospatial Intelligence"
 version: "1.0.0"
 doi: 10.5281/zenodo.15499120
-date-released: 2025-05-21
+date-released: 2025-05-23
 authors:
   - family-names: Shill
     given-names: Srijon Kumar
